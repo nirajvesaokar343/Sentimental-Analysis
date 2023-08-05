@@ -1,9 +1,15 @@
+import subprocess
+subprocess.call("pip install nltk", shell=True)
+
 import streamlit as st
 import pandas as pd
 import nltk
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report, accuracy_score
+
+# Rest of your Streamlit code...
+
 
 st.title('Amazon Alexa Sentiment Analysis')
 
